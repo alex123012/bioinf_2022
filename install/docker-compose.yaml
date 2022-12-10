@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  notebook:
+    image: docker.io/alexeymakhonin/bioinf-2022-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ..:/code
+    command:
+      - jupyter-notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
