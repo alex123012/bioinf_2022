@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+SRR*
+seqs.zip
 
 # C extensions
 *.so
