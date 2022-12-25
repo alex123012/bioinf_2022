@@ -10,7 +10,9 @@ RUN apt-get update && \
         python3-pip \
         python3-dev \
         vim \
-        curl
+        curl \
+        cmake \
+        gcc
 
 COPY /install_packages.r /app/install_packages.r
 RUN Rscript /app/install_packages.r
